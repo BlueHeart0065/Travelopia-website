@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelopia | Home</title>
+    <link rel="stylesheet" href="Travel-Website-Home.css">
+</head>
+
+<body>
+    <div class="TopBar">
+        <img src="Travel Website Assets/aeroplane-plane-svgrepo-com.png" alt="" class="Logo">
+        <h1 class="Header">Travelopia</h1>
+        <div class="TopBar-options-container">
+            <div class="TopBar-option" id="Home">
+                <p class="Home">Home</p>
+            </div>
+            <div class="TopBar-option" id="Flights">
+
+                <p class="Flights">Flights</p>
+            </div>
+            <div class="TopBar-option" id="Hotels">
+
+                <p class="Hotels">Hotels</p>
+            </div>
+            <div class="TopBar-option" id="Holiday-Packages">
+
+                <p class="Holiday-Packages">Holiday Packages</p>
+            </div>
+            <div class="TopBar-option" id="About-us">
+                <p class="About-us">About us</p>
+            </div>
+
+        </div>
+        <div class="Hamburger" id="Hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+    <div class="SideBar">
+        <!-- <img src="Travel Website Assets/back-logo.png" alt="" class="HideSideBar" id="HideSideBar"> -->
+        <div class="Profile">
+            <img src="Travel Website Home Assets/HideSideBar.png" alt="" class="HideSideBar" id="HideSideBar">
+            <img src="Travel Website Home Assets/Profile-avatar.png" alt="" class="Profile-avatar">
+            <div class="Profile-details">
+                <p class="Profile-name">Sahil Batgeri</p>
+                <p class="Profile-email">sahilbatgeri@gmail.com</p>
+            </div>
+        </div>
+        <p class="Overview">Overview</p>
+        <div class="SideBar-options">
+            <p class="options-text">Wishlist</p>
+            <img src="Travel Website Home Assets/Dashboard-logo.png" alt="" class="options-logo">
+            <img src="Travel Website Home Assets/HideSideBar.png" alt="" class="options-arrow">
+        </div>
+        <div class="SideBar-options">
+            <p class="options-text">Offers</p>
+            <img src="Travel Website Home Assets/Offers-logo.png" alt="" class="options-logo">
+            <img src="Travel Website Home Assets/HideSideBar.png" alt="" class="options-arrow">
+        </div>
+        <div class="SideBar-options">
+            <p class="options-text">Support</p>
+            <img src="Travel Website Home Assets/Support-logo.png" alt="" class="options-logo">
+            <img src="Travel Website Home Assets/HideSideBar.png" alt="" class="options-arrow">
+        </div>
+        <div class="SideBar-options">
+            <p class="options-text">Homestays</p>
+            <img src="Travel Website Home Assets/Homestays-logo.png" alt="" class="options-logo">
+            <img src="Travel Website Home Assets/HideSideBar.png" alt="" class="options-arrow">
+        </div>
+        <div class="SideBar-options">
+            <p class="options-text">Vehicle</p>
+            <img src="Travel Website Home Assets/Vehicle-logo.png" alt="" class="options-logo">
+            <img src="Travel Website Home Assets/HideSideBar.png" alt="" class="options-arrow">
+        </div>
+        <p class="Overview">Account</p>
+        <div class="SideBar-options">
+            <p class="options-text">Transactions</p>
+            <img src="Travel Website Home Assets/Transactions-logo.png" alt="" class="options-logo"
+                style="margin-left: 1vw; margin-right: 3vw">
+        </div>
+        <div class="SideBar-options">
+            <p class="options-text">Settings</p>
+            <img src="Travel Website Home Assets/Settings-logo.png" alt="" class="options-logo"
+                style="margin-left: 1vw; margin-right: 3vw">
+        </div>
+        <div class="SideBar-options" id="Log-out">
+            <p class="options-text">Log-out</p>
+            <img src="Travel Website Home Assets/Logout-logo.png" alt="" class="options-logo"
+                style="margin-left: 1vw; margin-right: 3vw">
+        </div>
+        <div class="Theme-setting">
+            <img src="Travel Website Home Assets/BrightMode-logo.png" alt="" class="options-logo"
+                style="margin: 1vw 0vw 0vw auto;">
+            <div class="switch-container">
+                <input type="checkbox" id="darkModeSwitch">
+                <label for="darkModeSwitch" class="switch"></label>
+            </div>
+            <img src="Travel Website Home Assets/DarkMode-logo.png" alt="" class="options-logo"
+                style="height: 2.3vw; width:2.3vw; margin: 1vw 3vw 3vw auto;">
+
+
+        </div>
+    </div>
+    <div class="Hero">
+        <div class="Decoration">
+            <p class="Welcome-text">Explore the <br>World with <br>us</p>
+            <img src="Travel Website Home Assets/Illustration-Bag.png" alt="" class="Illustration-Bag">
+        </div>
+        <div class="BookBox">
+            <div class="Trip-type">
+                <label class="circle-tick" style="margin-left: 0vw;">
+                    <input type="checkbox" name="" id="">
+                    <span class="tick-icon"></span>
+                    <p>One Way</p>
+                </label>
+                <label class="circle-tick">
+                    <input type="checkbox" name="" id="">
+                    <span class="tick-icon"></span>
+                    <p>Round trip</p>
+                </label>
+                <label class="circle-tick">
+                    <input type="checkbox" name="" id="">
+                    <span class="tick-icon"></span>
+                    <p>Multi city</p>
+                </label>
+            </div>
+            <div class="Trip-details-bar">
+                <div class="From" id="From" onclick="toggleDropdown()" style="border-top-left-radius:10px; border-bottom-left-radius:10px;">
+                    <p>From</p>
+                    <div class="Start-city">Delhi</div>
+                    <div class="Airport">Indira Gandhi International Airport</div>
+                    <div class="Dropdown-menu" id="Dropdown-menu">
+                        <div onclick="selectLocation('Mumbai', 'Chhatrapati Shivaji Maharaj International Airport')">
+                            <img src="Travel Website Home Assets/Aeroplane.png" alt="" class="Airport-logo">
+                            <p>Mumbai, India</p>
+                        </div>
+                        <div onclick="selectLocation('Kolkata', 'Netaji Subhash Chandra Bose International Airport')">
+                            <img src="Travel Website Home Assets/Aeroplane.png" alt="" class="Airport-logo">
+                            <p>Kolkata, India </p>
+
+                        </div>
+                        <div onclick="selectLocation('Jaipur', 'Jaipur International Airport')">
+                            <img src="Travel Website Home Assets/Aeroplane.png" alt="" class="Airport-logo">
+                            <p>Jaipur, India </p>
+
+                        </div>
+                        <div onclick="selectLocation('Hyderabad', 'Rajiv Gandhi Intl Airport - Shamshabad Airport')">
+                            <img src="Travel Website Home Assets/Aeroplane.png" alt="" class="Airport-logo">
+                            <p>Hyderabad, India</p>
+
+                        </div>
+                        <div onclick="selectLocation('Pune', 'Pune International Airport')">
+                            <img src="Travel Website Home Assets/Aeroplane.png" alt="" class="Airport-logo">
+                            <p>Pune, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="To" id="To" onclick="toggleDropdownForTo()">
+                    <p>To</p>
+                    <div class="Start-city">Bengaluru</div>
+                    <div class="Airport">Kempegowda International Airport</div>
+                    <div class="Dropdown-menu-to" id="Dropdown-menu-to">
+                        <div onclick="selectLocationForTo('Pune', 'Pune International Aorport')">
+                            <img src="Travel Website Home Assets/Aeroplane.png" alt="" class="Airport-logo">
+                            <p>Pune, India </p>
+
+                        </div>
+                        <div
+                            onclick="selectLocationForTo('Mumbai', 'Chhatrapati Shivaji Maharaj International Airport')">
+                            <img src="Travel Website Home Assets/Aeroplane.png" alt="" class="Airport-logo">
+                            <p>Mumbai, India </p>
+
+                        </div>
+                        <div
+                            onclick="selectLocationForTo('Kolkata', 'Netaji Subhash Chandra Bose International Airport')">
+                            <img src="Travel Website Home Assets/Aeroplane.png" alt="" class="Airport-logo">
+                            <p>Kolkata, India </p>
+
+                        </div>
+                        <div onclick="selectLocationForTo('Jaipur', 'Jaipur International Airport')">
+                            <img src="Travel Website Home Assets/Aeroplane.png" alt="" class="Airport-logo">
+                            <p>Jaipur, India</p>
+
+                        </div>
+                        <div
+                            onclick="selectLocationForTo('Hyderabad', 'Rajiv Gandhi Intl Airport - Shamshabad Airport')">
+                            <img src="Travel Website Home Assets/Aeroplane.png" alt="" class="Airport-logo">
+                            <p>Hyderabad, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="To" id="To" style="width: 10vw;">
+                    <p>Departure</p>
+                    <div class="Start-city" style="font-size: 1.1vw;">12th August</div>
+                    <div class="Airport">Saturday</div>
+                </div>
+                <div class="To" id="To" style="width: 10vw;">
+                    <p>Return</p>
+                    <div class="Start-city" style="font-size: 1.1vw;">15th August</div>
+                    <div class="Airport">Wednesay</div>
+                </div>
+                <div class="To" id="Travellers-and-Class" style="border: none; border-top-right-radius:10px; border-bottom-right-radius:10px;" onclick="toggleDropdownForClass()">
+                    <p>Travellers and class</p>
+                    <div class="Start-city" style="font-size: 1vw;"><p id="Total" style="font-size: 1.5vw;">0</p> Travellers</div>
+                    <div class="Airport" style="font-size: 0.8vw;" id="Selected-class-type">Class : </div>
+                </div>
+                <div class="Travellers-and-Class-Dropdown" id="TravellersandClassDropdown">
+                    <div class="Amount">
+                        <div class="Amount-type">
+                            <p class="Amount-type-title">Adults</p>
+                            <p class="Age">(Aged 12+ yrs)</p>
+                            <div class="Calc">
+                                <img src="Travel Website Home Assets/minus-circle-svgrepo-com.png" alt="" onclick="subtract('number1')">
+                                <p class="number" id="number1">0</p>
+                                <img src="Travel Website Home Assets/add-circle-svgrepo-com.png" alt="" onclick="add('number1')">
+                            </div>
+                        </div>
+                        <div class="Amount-type">
+                            <p class="Amount-type-title">Children</p>
+                            <p class="Age">(Aged 2-12 yrs)</p>
+                            <div class="Calc">
+                                <img src="Travel Website Home Assets/minus-circle-svgrepo-com.png" alt="" onclick="subtract('number2')">
+                                <p class="number" id="number2">0</p>
+                                <img src="Travel Website Home Assets/add-circle-svgrepo-com.png" alt="" onclick="add('number2')">
+                            </div>
+                        </div>
+                        <div class="Amount-type">
+                            <p class="Amount-type-title">Infants</p>
+                            <p class="Age">(Below 2 yrs)</p>
+                            <div class="Calc">
+                                <img src="Travel Website Home Assets/minus-circle-svgrepo-com.png" alt="" onclick="subtract('number3')">
+                                <p class="number" id="number3">0</p>
+                                <img src="Travel Website Home Assets/add-circle-svgrepo-com.png" alt="" 
+                                onclick="add('number3')">
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <p class="Travel-class-text">Travel Class</p>
+                    <div class="Travel-class">
+                        <div class="Travel-class-type" id="Economy" onclick="selectClass('Economy')" onblur="deselectClass('Economy')"><p>Economy</p></div>
+                        <div class="Travel-class-type" id="Premium" onclick="selectClass('Premium')"><p style="margin-top: 0.3vw;margin-bottom:0.3vw;">Premium Economy</p></div>
+                        <div class="Travel-class-type" id="Business" onclick="selectClass('Business')"><p>Business</p></div>
+                        <div class="Travel-class-type" id="First-class" onclick="selectClass('First-class')" >
+                            <p style="margin-top: 0.3vw;margin-bottom:0.3vw;">Frist Class</p>
+                        </div>
+                    </div>
+                    <div class="end-of-travel-and-class">
+                        <div class="Cancel" onclick="PassengersNumber()"><p>Cancel</p></div>
+                        <div class="Done" id = "Done" onclick="PassengersNumber()"><p>Done</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="Fare-type">
+                <p style="margin-left: 1vw;">Select a <br>fare type : </p>
+                <label class="circle-tick" style="margin-left: 1vw; transition : all 0.3s">
+                    <input type="checkbox" name="" id="">
+                    <span class="tick-icon" style="width: 0.8vw; height: 0.8vw; transition : all 0.3s"></span>
+                    <p style="font-size: 0.8vw;">Regular <br>Fares</p>
+                </label>
+                <label class="circle-tick">
+                    <input type="checkbox" name="" id="">
+                    <span class="tick-icon" style="width: 0.8vw; height: 0.8vw; transition : all 0.3s"></span>
+                    <p style="font-size: 0.8vw;">Armed Forces <br>Fares</p>
+                </label>
+                <label class="circle-tick">
+                    <input type="checkbox" name="" id="">
+                    <span class="tick-icon" style="width: 0.8vw; height: 0.8vw; transition : all 0.3s"></span>
+                    <p style="font-size: 0.8vw;">Senior citizen <br>Fares
+                    </p>
+                </label>
+                <label class="circle-tick">
+                    <input type="checkbox" name="" id="">
+                    <span class="tick-icon" style="width: 0.8vw; height: 0.8vw; transition : all 0.3s"></span>
+                    <p style="font-size: 0.8vw;">Student<br>Fares
+                    </p>
+                </label>
+                <label class="circle-tick">
+                    <input type="checkbox" name="" id="">
+                    <span class="tick-icon" style="width: 0.8vw; height: 0.8vw; transition : all 0.3s"></span>
+                    <p style="font-size: 0.8vw;">Doctors and nurses <br>Fares
+                    </p>
+                </label>
+            </div>
+            <button class="Book-button">
+                <p>
+
+                    Book now
+                </p>
+            </button>
+        </div>
+    </div>
+</body>
+
+<script src="Travel-Website-Home.js"></script>
+
+</html>
