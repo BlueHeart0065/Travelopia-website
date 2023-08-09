@@ -30,7 +30,7 @@ password_input.onblur = function(){
 }
 
 function BackToLand(){
-    window.location.href = 'Travel-Website-Landing.html';
+    window.location.href = 'index.html';
 }
 
 

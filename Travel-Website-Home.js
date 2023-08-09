@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const LogOut = document.getElementById("Log-out");
 
 LogOut.onclick = function () {
-    window.location.href = 'Travel-Website-Landing.html';
+    window.location.href = 'index.html';
 }
 
 
