@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travelopia | Login </title>
+    <link rel="stylesheet" href="Travel-Website-Login.css">
+</head>
+<body>
+    <div class="Header">
+
+        <img src="Travel Website Assets/aeroplane-plane-svgrepo-com.png" alt="" class="Logo">
+        <h2>Travelopia</h2>
+    </div>
+
+    <p class="welcome-section">Welcome to your journey</p>
+
+    <div class="login-box">
+        <p class="Your-email">Your email</p>
+        <div class="email-bar">
+            <img src="Travel Website Assets/email-logo.png" alt="" class="email-logo">
+            <label for="email"></label>
+            <input type="email" class="email-input" placeholder="Enter your email-id or username" id="email_" required name="email_">
+        </div>
+        <p class="email-error" id="email-error"></p>
+
+        <p class="Your-password" style="margin-top: 5%;">Your Password</p>
+        <div class="password-bar">
+            <img src="Travel Website Assets/password-logo.png" alt="" class="password-logo">
+            <input type="password" class="password-input" placeholder="Enter your password" id="password_" name="password_" required>
+        </div>
+        <p class="password-error" id="password-error">
+        </p>
+        <button class="Sign-in-button" onclick = "Switch()">
+            <p class="Sign-in-text">Sign in</p>
+        </button>
+        <div class="other-login-options">
+            <img src="Travel Website Assets/fb.png" alt="" >
+            <img src="Travel Website Assets/google.png" alt="" >
+            <img src="Travel Website Assets/twit.png" alt="" >
+        </div>
+        
+        <div class="options">
+            <a href="#" style="margin-left: 0%;">Don't have an account?</a>
+            <a href="#">Forgot password?</a>
+        </div>
+    </div>
+
+    <button class="Back-button" onclick="BackToLand()">
+        <img src="Travel Website Assets/back-logo.png" alt="">
+    </button>
+
+</body>
+<script src="Travel-Website-Login.js"></script>
+</html>
